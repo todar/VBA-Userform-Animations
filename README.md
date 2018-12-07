@@ -2,7 +2,7 @@
 Tools to have transitions and animations with Userforms and Userform controls
 
 'EXAMPLE (IN A USERFORM WITH TWO LABELS AND A COMMAND BUTTON)
-Private Sub CommandButton1_Click()
+```Private Sub CommandButton1_Click()
     
     'SIMPLE EXAMPLES MOVING LABELS
     Transition Effect(Label1, "Top", Me.InsideHeight - Label1.Height, 200), _
@@ -17,4 +17,4 @@ Private Sub CommandButton1_Click()
     'AS WELL AS USERFORMS
     Transition Effect(Me, "TOP", 20, 1000)
     
-End Sub
+```End Sub
