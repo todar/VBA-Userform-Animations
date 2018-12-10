@@ -2,34 +2,36 @@
 Tools to have transitions and animations with Userforms and Userform controls
 Similar to CSS Transitions and Animations (kinda lol).
 
+![](UserformAnimation.gif)
+
 # Usage
 ```vb
-'EXAMPLE (IN A USERFORM WITH TWO LABELS AND A COMMAND BUTTON)
-Private Sub CommandButton1_Click()
+'EXAMPLE (IN A USERFORM WITH VARIAOUS CONTROLS)
+Private Sub GoButton_Click()
     
-    'APPLYING SINGLE EFFECT
-    Transition Effect(Label1, "left", 200, 300)
+    'SINGLE EFFECT
+    Transition Effect(sidebar, "width", 100, 1000)
     
-    'SINGLE EFFECT, SHOWING USERFORMS CAN BE EFFECTED AS WELL
-    Transition Effect(Me, "TOP", 500, 1000)
+    'CAN ALSO DO EFFECTS ON USERFORMS
+    Transition Effect(Me, "Top", 400, 1000)
     
-    'CAN ALSO WORK WITH FONTSIZE
-    Transition Effect(CommandButton1, "fontsize", 16, 200)
+    'MULTIPLE EFFECTS APPLIED AT ONCE WITH DIFFERENT TIMES AND PROPERITES
+    Transition Effect(sidebar, "width", 0, 500) _
+             , Effect(box, "Top", Me.InsideHeight - box.Height, 1000) _
+             , Effect(box2, "Top", 0, 500) _
+             , Effect(GoButton, "fontsize", 4, 1000) _
+             , Effect(Me, "Top", 100, 1000) _
     
-    'APPLYING MULTIPLE EFFECTS AT ONCE
-    Transition Effect(Label1, "Top", Me.InsideHeight - Label1.Height, 200) _
-             , Effect(Label2, "left", Me.Width - Label2.Width, 500) _
-             , Effect(me, "Top", 0, 2000)
-             
-    'CONSECTIVE EFFECTS IN A ROW MAKE IT WORK LIKE AN ANIMATION
-    Transition Effect(Label1, "Top", 20, 1000)
-    Transition Effect(Label1, "Left", 16, 200)
-    Transition Effect(Label1, "Top", 0, 200)
-   
+    'MULTIPLE EFFECTS IN A ROW DO AN ANITMATION EFFECT
+    Transition Effect(box, "Left", 0, 250), Effect(box, "Top", 0, 250)
+    Transition Effect(box, "left", Me.InsideWidth - box.Width, 250)
+    Transition Effect(box, "Top", Me.InsideHeight - box.Height, 250)
+    Transition Effect(box, "left", 0, 250)
+    Transition Effect(box, "Top", 0, 250)
+    
 End Sub
 ```
-# Output
-![](UserformAnimation.gif)
+
 
 # Public Methods/Functions
 - Transition
