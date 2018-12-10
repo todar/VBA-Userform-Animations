@@ -6,7 +6,7 @@ Similar to CSS Transitions and Animations (kinda lol).
 
 # Usage
 ```vb
-'EXAMPLE (IN A USERFORM WITH VARIAOUS CONTROLS)
+'EXAMPLE (IN A USERFORM WITH VARIOUS CONTROLS)
 Private Sub GoButton_Click()
     
     'SINGLE EFFECT
