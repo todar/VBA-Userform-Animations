@@ -2,7 +2,7 @@
 Tools to have transitions and animations with Userforms and Userform controls
 Similar to CSS Transitions and Animations (kinda lol).
 
-# USAGE
+# Usage
 ```vb
 'EXAMPLE (IN A USERFORM WITH TWO LABELS AND A COMMAND BUTTON)
 Private Sub CommandButton1_Click()
@@ -28,6 +28,8 @@ Private Sub CommandButton1_Click()
    
 End Sub
 ```
+
+![](UserformAnimation.gif)
 
 # Public Methods/Functions
 - Transition
