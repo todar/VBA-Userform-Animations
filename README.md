@@ -2,7 +2,7 @@
 Tools to have transitions and animations with Userforms and Userform controls
 Similar to CSS Transitions and Animations (kinda lol).
 
-# Example
+# USAGE
 ```vb
 'EXAMPLE (IN A USERFORM WITH TWO LABELS AND A COMMAND BUTTON)
 Private Sub CommandButton1_Click()
@@ -29,24 +29,23 @@ Private Sub CommandButton1_Click()
 End Sub
 ```
 
-# PUBLIC METHODS/FUNCTIONS
+# Public Methods/Functions
 - Transition
 - Effect
 - MicroTimer
 
-# PRIVATE METHODS/FUNCTIONS
+# Private Methods/Functions
 - AllTransitionsComplete
 - TransitionComplete
 - IncrementElement
 - easeInAndOut
 
 # TODO:
-- CHANGE THE WAY THAT THE EFFECT IS CALLED, THAT WAY THERE MIGHT BE AN OPTION OF WHAT TYPE
-OF EFFECT, SUCH AS LINER, EASE-OUT, EASE-IN, POSSIBLY EVEN Bezier CURVE.
+- Change The Way That The Effect Is Called, That Way There Might Be An Option Of What Type Of Effect, Such As Liner, Ease-Out, Ease-In, Possibly Even Bezier Curve.
 
-- NEED TO ADD A FUNCTION FOR FINDING THE USERFORM FOR REFRESH, CURRENTLY JUST GRABS IT FROM
-THE FIRST ELEMENT THAT IS ADDED. WORKS FOR NOW, BUT NOT VERY DYNAMIC.
+- Need To Add A Function For Finding The Userform For Refresh, Currently Just Grabs It From The First Element That Is Added. Works For Now, But Not Very Dynamic.
 
-- CURRENTLY HAVE A SLEEP HARDCODED, SHOULD LOOK INTO TESTING DIFFERENT THINGS TO SEE IF IT
-CAN HELP REDUCE FLASHING. AGAIN, WORKS FOR NOW, BUT SHOULD BE A BETTER WAY.
+
+- Currently Have A Sleep Hardcoded, Should Look Into Testing Different Things To See If It can Help Reduce Flashing. Again, Works For Now, But Should Be A Better Way.
+
 
